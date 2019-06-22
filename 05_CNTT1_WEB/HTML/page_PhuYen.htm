@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type = "text/css">
+*{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+}
+/*==BODY==*/
+body{
+	font-family: Times New Roman;
+	color: #333;
+}
+/*==MENU==*/
+#menu ul{
+	list-style-type: none;
+	background: lightblue;
+	text-align: center;
+	position: relative;
+}
+#menu ul > li{
+	color:#FFFFFF;
+	display: inline-table;
+	line-height: 40px;
+}
+#menu ul li a{
+	color: 	#8B4513;
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+}
+#menu ul > li a:hover{
+	background: tomato;
+	color: #8B0000;
+}
+#menu ul li > .sub-menu{
+	display: none;
+	position: absolute;
+	background: lightgray;
+	height: auto;
+	width: 140px;
+	border: 1px solid black;
+}
+#menu ul li > .sub-menu > li{
+	float: left;
+	width: 100%;
+	margin-left: 0;
+}
+
+#menu ul li > .sub-menu > li:hover{
+	background-color: lightgray;
+}
+
+#menu ul li:hover .sub-menu{
+	display: block;
+}
+.main1{
+	height: 350px;
+	width: 25%;
+	float: left;
+	margin-left: 80px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main1 > a{
+	text-decoration: none;
+}
+.main1 > a > p{
+	color: black;
+	margin-top: 5px;
+}	
+.main1 > a > p:hover{
+	color: tomato;
+}	
+
+.main{
+	margin-top: 50px;
+}
+</style>
+</head>
+<body>
+<div>
+<img src = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/images/Header2.jpg">
+</div>
+	<div id = "menu">
+	<ul>
+	<li><a href = "file:///D:/05_CNTT1_WEB/HTML/index1.htm">TRANG CH&#7910;</a></li>
+	<li>
+	<a href = "#">B&#7854;C TRUNG B&#7896;</a>
+	<ul class = "sub-menu">
+	<li><a href = "#">THANH HÓA</a></li>
+	<li><a href = "#">NGH&#7878; AN</a></li>
+	<li><a href = "#">HÀ T&#296;NH</a></li>
+	<li><a href = "#">QU&#7842;NG BÌNH</a></li>
+	<li><a href = "#">QU&#7842;NG TR&#7882;</a></li>
+	<li><a href = "#">HU&#7870;</a></li>
+	</ul>
+	</li>
+	<li>
+	<a href = "#">NAM TRUNG B&#7896;</a>
+	<ul class = "sub-menu">
+	<li><a href = "file:///D:/05_CNTT1_WEB/HTML/page_DaNang.htm">&#272;À N&#7860;NG</a></li>
+	<li><a href = "file:///D:/05_CNTT1_WEB/HTML/page_QuangNam.htm">QU&#7842;NG NAM</a></li>
+	<li><a href = "file:///D:/05_CNTT1_WEB/HTML/page_QuangNgai.htm">QU&#7842;NG NGÃI</a></li>
+	<li><a href = "file:///D:/05_CNTT1_WEB/HTML/page_BinhDinh.htm">BÌNH &#272;&#7882;NH</a></li>
+	<li><a href = "file:///D:/05_CNTT1_WEB/HTML/page_PhuYen.htm">PHÚ YÊN</a></li>
+	<li><a href = "file:///D:/05_CNTT1_WEB/HTML/page_KhanhHoa.htm">KHÁNH HÒA</a></li>
+	<li><a href = "file:///D:/05_CNTT1_WEB/HTML/page_NinhThuan.htm">NINH THU&#7852;N</a></li>
+	<li><a href = "file:///D:/05_CNTT1_WEB/HTML/page_BinhThuan.htm">BÌNH THU&#7852;N</a></li>
+	</ul>
+	</li>
+	<li><a href = "#">TÂY NGUYÊN</a></li>
+	<li><a href = "#">THÔNG TIN</a></li>
+	</ul>
+	</div>
+	<div class="main">
+	<div class = "main1 left">
+	<a href = "file:///D:/05_CNTT1_WEB/HTML/BanhXeo_PhuYen.htm">
+	<img src = "file:///D:/05_CNTT1_WEB/images/picture15.jpg" style =" height : 300px; width: 100%;"> 
+	<p><i>&#272;&#7863;c s&#7843;n Phú Yên: Bánh Xèo </i></p>
+	</a>
+	</div>
+	<div class = "main1 center">
+	<a href = "file:///D:/05_CNTT1_WEB/HTML/SuaBien_PhuYen.htm">
+	<img src = "file:///D:/05_CNTT1_WEB/images/picture14.jpg" style =" height : 300px; width: 100%;"> 
+	<p><i>&#272;&#7863;c s&#7843;n Phú Yên: S&#7913;a Bi&#7875;n Tuy Hòa</i></p>
+	</a>
+
+	</div>
+    <div class= "main1 right">
+	<a href = "file:///D:/05_CNTT1_WEB/HTML/SoHuyet_PhuYen.htm">
+	<img src = "file:///D:/05_CNTT1_WEB/images/picture101.jpg" style =" height : 300px; width: 100%;"> 
+	<p><i>&#272;&#7863;c s&#7843;n Phú Yên: Sò Huy&#7871;t Ô Loan</i></p>
+	</a>
+
+	</div>
+
+	</div>
+</body>
+</html>

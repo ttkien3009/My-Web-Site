@@ -1,0 +1,175 @@
+<html>
+
+<head>
+<style type = "text/css">
+*{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+}
+/*==BODY==*/
+body{
+	font-family: Times New Roman;
+	color: #333;
+}
+/*==MENU==*/
+#menu ul{
+	list-style-type: none;
+	background: lightblue;
+	text-align: center;
+	position: relative;
+}
+#menu ul > li{
+	color:#FFFFFF;
+	display: inline-table;
+	line-height: 40px;
+}
+#menu ul li a{
+	color: 	#8B4513;
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+}
+#menu ul > li a:hover{
+	background: tomato;
+	color: #8B0000;
+}
+#menu ul li > .sub-menu{
+	display: none;
+	position: absolute;
+	background: lightgray;
+	height: auto;
+	width: 140px;
+	border: 1px solid black;
+}
+#menu ul li > .sub-menu > li{
+	float: left;
+	width: 100%;
+	margin-left: 0;
+}
+
+#menu ul li > .sub-menu > li:hover{
+	background-color: lightgray;
+}
+
+#menu ul li:hover .sub-menu{
+	display: block;
+}
+.main1{
+	height: 350px;
+	width: 25%;
+	float: left;
+	margin-left: 80px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main1 > a{
+	text-decoration: none;
+}
+.main1 > a > p{
+	color: black;
+	margin-top: 5px;
+}	
+.main1 > a > p:hover{
+	color: tomato;
+}	
+
+.main{
+	margin-top: 50px;
+	height: 400px;
+
+}
+.logo{
+	float: left;
+	color: red;
+	font-size: 20px;
+}
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+</head>
+
+<body>
+<div>
+<img src = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/images/Header2.jpg">
+</div>
+	<div id = "menu">
+	<ul>
+	<li><a href = "index1.htm">TRANG CH&#7910;</a></li>
+	<li>
+	<a href = "#">B&#7854;C TRUNG B&#7896;</a>
+	<ul class = "sub-menu">
+	<li><a href = "file:///C:/Users/Jos%20Trung%20Kien/Documents/My%20Web%20Sites/MyWebSite/BacTrungBo/ThanhHoa.htm">THANH HÓA</a></li>
+	<li><a href = "file:///C:/Users/Jos%20Trung%20Kien/Documents/My%20Web%20Sites/MyWebSite/BacTrungBo/NgheAn.htm">NGH&#7878; AN</a></li>
+	<li><a href = "file:///C:/Users/Jos%20Trung%20Kien/Documents/My%20Web%20Sites/MyWebSite/BacTrungBo/HaTinh.htm">HÀ T&#296;NH</a></li>
+	<li><a href = "file:///C:/Users/Jos%20Trung%20Kien/Documents/My%20Web%20Sites/MyWebSite/BacTrungBo/QuangBinh.htm">QU&#7842;NG BÌNH</a></li>
+	<li><a href = "file:///C:/Users/Jos%20Trung%20Kien/Documents/My%20Web%20Sites/MyWebSite/BacTrungBo/QuangTri.htm">QU&#7842;NG TR&#7882;</a></li>
+	<li><a href = "file:///C:/Users/Jos%20Trung%20Kien/Documents/My%20Web%20Sites/MyWebSite/BacTrungBo/Hue.htm">HU&#7870;</a></li>
+	</ul>
+	</li>
+	<li>
+	<a href = "#">NAM TRUNG B&#7896;</a>
+	<ul class = "sub-menu">
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/NamTrungBo/page_DaNang.htm">&#272;À N&#7860;NG</a></li>
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/NamTrungBo/page_QuangNam.htm">QU&#7842;NG NAM</a></li>
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/NamTrungBo/page_QuangNgai.htm">QU&#7842;NG NGÃI</a></li>
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/NamTrungBo/page_BinhDinh.htm">BÌNH &#272;&#7882;NH</a></li>
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/NamTrungBo/SoHuyet_PhuYen.htm">PHÚ YÊN</a></li>
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/NamTrungBo/page_KhanhHoa.htm">KHÁNH HÒA</a></li>
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/NamTrungBo/page_NinhThuan.htm">NINH THU&#7852;N</a></li>
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/NamTrungBo/page_BinhThuan.htm">BÌNH THU&#7852;N</a></li>
+	</ul>
+	</li>
+	<li><a href = "#">TÂY NGUYÊN</a>
+	<ul class = "sub-menu">
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/TayNguyen/amthucdaklak.htm">&#272;&#7854;C L&#7854;C</a></li>
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/TayNguyen/amthucdaknong.htm">&#272;&#7854;C NÔNG</a></li>
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/TayNguyen/amthucgialai.htm">GIA LAI</a></li>
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/TayNguyen/amthuckontum.htm">KON TUM</a></li>
+	<li><a href = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/TayNguyen/amthuclamdong.htm">LÂM &#272;&#7890;NG</a></li>
+	</ul>
+	</li>
+	<li><a href = "file:///C:/Users/Jos%20Trung%20Kien/Documents/My%20Web%20Sites/MyWebSite/BacTrungBo/ThongTin.htm">THÔNG TIN</a></li>
+	</ul>
+	</div>
+	</div>
+	<div class="main">
+	<div class = "main1 left">
+	<a href = "file:///C:/Users/Jos%20Trung%20Kien/Documents/My%20Web%20Sites/MyWebSite/BacTrungBo/ChaTomTH.htm">
+	<img src = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/images/chatom1.jpg" style =" height : 300px; width: 100%;"> 
+	<p><i>Ch&#7843; tôm Thanh Hóa quê h&#432;&#417;ng c&#7911;a c&#7847;u th&#7911; Bùi Ti&#7871;n D&#361;ng</i></p>
+	</a>
+	</div>
+	<div class = "main1 center">
+	<a href = "file:///C:/Users/Jos%20Trung%20Kien/Documents/My%20Web%20Sites/MyWebSite/BacTrungBo/NemChuaTH.htm">
+	<img src = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/images/NemChua1.jpg" style =" height : 300px; width: 100%;"> 
+	<p><i>Nh&#7899; mãi không quên &#273;&#7863;c s&#7843;n nem chua x&#7913; Thanh</i></p>
+	</a>
+	</div>
+    <div class= "main1 right">
+	<a href = "file:///C:/Users/Jos%20Trung%20Kien/Documents/My%20Web%20Sites/MyWebSite/BacTrungBo/GoiCaTH.htm">
+	<img src = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/images/GoiCa1.jpg" style =" height : 300px; width: 100%;"> 
+	<p><i>G&#7887;i cá S&#7847;m S&#417;n &#273;&#7863;c s&#7843;n n&#7893;i ti&#7871;ng Thanh Hóa</i></p>
+	</a>
+	</div>
+	</div>
+	
+	<div class="main">
+	<div class = "main1 left">
+	<a href = "file:///C:/Users/Jos%20Trung%20Kien/Documents/My%20Web%20Sites/MyWebSite/BacTrungBo/BanhRangBuaTH.htm">
+	<img src = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/images/BanhRangBua2.jpg" style =" height : 300px; width: 100%;"> 
+	<p><i>BA&#769;NH R&#258;NG B&#431;&#768;A – &#272;&#7862;C S&#7842;N TRUY&#7872;N TH&#7888;NG VÙNG &#272;&#7844;T THANH HÓA</i></p>
+	</a>
+	</div>
+	<div class = "main1 center">
+	<a href = "file:///C:/Users/Jos%20Trung%20Kien/Documents/My%20Web%20Sites/MyWebSite/BacTrungBo/BanhGaiTH.htm">
+	<img src = "file:///C:/Users/Jos Trung Kien/Documents/My Web Sites/MyWebSite/images/BanhGai4.jpg" style =" height : 300px; width: 100%;"> 
+	<p><i>Bánh gai T&#7913; Tr&#7909;: &#272;&#7863;c s&#7843;n n&#7893;i ti&#7871;ng c&#7911;a x&#7913; Thanh</i></p>
+	</a>
+	</div>
+    </div>
+
+</body>
+
+</html>

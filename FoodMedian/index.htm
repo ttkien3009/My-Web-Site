@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type = "text/css">
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.header{
+	max-width: 100%;
+	height: 60px;
+	margin: auto;
+	border-bottom: 1px solid gray;
+	top:0;
+	position: sticky;
+	background-color: white;
+	box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.1);
+	z-index: 1;
+}
+.header .logo {
+	float: left;
+    font-family: Freestyle Script;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.header .logo a{
+	text-decoration: none;
+	color: black;
+}
+.header .logo::after{
+	content: " ";
+	display: block;
+	width: 0;
+	background-color: tomato;
+	height: 2px;
+	transition: width .3s;
+}
+
+.header .logo:hover::after{
+	transition: width .3s;
+    width: 100% 
+}
+.header .logo a:hover{
+	color: tomato;
+}
+.header .logo >a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    transition: color .3s;
+}
+.menu{
+	margin-right: 100px;
+	float: right;
+	margin-top: 0px;
+}
+.menu .menu-nav{
+	transition: translateX( -50%) translateY(-50%);
+}
+.menu .menu-nav li{
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+
+}
+.menu .menu-nav >li:hover{
+   background-color:#ece7e7;
+   border: 1px solid lightgray; 
+}
+.menu .menu-nav li a:hover{
+	color: tomato;
+}
+.menu .menu-nav li a{
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+	cursor: pointer;
+	padding: 18px 20px;
+	transition: color .3s;	
+}
+.menu .menu-nav li .cool-link::after{
+	content: '';
+	display: block;
+	width: 0;
+	background-color: tomato;
+	height: 2px;
+	transition: width 0.3s;
+}
+.menu .menu-nav li .cool-link:hover::after{
+	width: 100%;
+	transition: width 0.3s;
+}
+.menu .menu-nav .active {
+	background-color: #ece7e7;
+	border: 1px solid lightgray;
+	}
+.menu .menu-nav .content-dropdown .dropdown{
+	display: none;
+	background-color: #fff;
+	border: 1px solid lightgray;
+	width: 200px;
+    z-index: 399;
+	position: absolute;
+	
+}
+.menu .menu-nav .content-dropdown .dropdown >li{
+	float: left;
+	width: 100%;
+	list-style-type: none;
+}
+.menu .menu-nav .content-dropdown .dropdown >li:hover{
+	background-color: #ece7e7;
+}
+.menu .menu-nav .content-dropdown:hover .dropdown{
+	display: block;
+}
+.arrow {
+    display: inline-block;
+    zoom: 1;
+    width: 0;
+    height: 0;
+    position: relative;
+    padding: 0px;
+    top: -1px;
+    vertical-align: middle;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #777;
+    margin-right: 20px;
+}
+.header-img{
+	max-width: 1000px;
+	height: 450px;
+	margin: auto;
+	margin-top: 50px;
+}
+.header-img .content-img{
+	float:left;
+	text-align: center;
+	height: 400px;
+	width: 320px;
+	margin-left: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		
+}
+.header-img .content-img > img{
+	margin-top: 3px;
+}
+.header-img .content-img > div{
+	padding: 3px;
+	float: left;
+}
+.main-img{
+	height: 500px;
+	margin-top: 20px;
+	position: relative;
+}
+.main-img img{
+	max-width: 100%;
+	opacity: 0.7;
+}
+.main-img .main-img-text{
+	position: absolute;
+	text-align: center;
+	top:40%;
+	left: 20%;
+}
+.main-img .main-img-text .main-img-text-bt{
+	color: white;
+	margin-bottom: 30px;
+	max-width: 900px;
+	font-family: Book Antiqua;
+	font-size: 25px;	
+}
+.main-img .main-img-text .main-img-text-bt p{
+	padding-bottom: 20px; 
+}
+.main-img .main-img-text .main-img-text-link{
+	margin-top: 30px;
+}
+.main-img .main-img-text .main-img-text-link a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+	padding: 20px 40px;
+	letter-spacing: 1px;
+	transition: background 0.3s;
+	border-radius: 10px;
+}
+.main-img .main-img-text .main-img-text-link a:hover{
+	color: black;
+	background-color: white; 
+}
+.main-content{
+	max-width: 900px;
+	height: 400px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+.main-content .main-content-text{
+	height:30px;
+}
+.main-content .main-content-text .main-content-text-1{
+	float: left;
+	margin-left: 20px; 
+}
+.main-content .main-content-text .main-content-text-2{
+	float: right;
+	margin-right: 20px;
+}
+.main-content .main-content-text .main-content-text-2 a{
+	text-decoration: none;
+	color: black;
+}
+.main-content .main-content-text .main-content-text-2 a::after{
+	content: "";
+	display: block;
+	width: 0;
+	background-color: gray;
+	height: 2px;
+	transition: width .3s;
+}
+.main-content .main-content-text .main-content-text-2 a:hover::after{
+	width: 100%;
+	transition: width .3s;
+}
+.main-content .main-content-text .main-content-text-2 a:hover{
+	color: gray;
+}
+.main-content .main-content-img{
+	height: 380px;
+}
+.main-content .main-content-img .main-content-img-1{
+    width: 280px;
+    float: left;
+    height: 380px;
+    margin-left: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main-content .main-content-img .main-content-img-1 > a:hover{
+	opacity: 0.7;
+}
+.main-content .main-content-img .main-content-img-1 > a{
+	margin-top: 3px;
+	transition: opacity .3s;
+}
+.main-content .main-content-img .main-content-img-1 > div{
+	float: left;
+	margin-left: 10px;
+	padding-top: 3px;
+	text-align: center;
+}
+.footer{
+	margin-top: 10px;
+	border-top: 1px  solid lightgray;
+	height: 200px;
+	text-align: center;
+	padding-top:50px; 
+}</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DU LICH & &#7848;M TH&#7920;C</title>
+	<link rel="stylesheet" type="text/css" href="trangchu.css">
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+		    <a href="#">TRAVEL & FOOD</a>
+	    </div>
+		<div class="menu">
+			<ul class="menu-nav">
+				<li class="active" ><a href="trangchu.html" class="cool-link">TRANG CH&#7910;</a></li>
+				<li class="content-dropdown">
+					<a class="cool-link" href="doan.html">DU L&#7882;CH</a>
+					<i class="arrow"></i>
+   					<ul class="dropdown">
+								<li><a href="dulich_dalat.html">&#272;À L&#7840;T</a></li>
+								
+								<li><a href="dulich_saigon.html">SÀI GÒN</a></li>
+								
+								<li><a href="dulich_vungtau.html">V&#360;NG TÀU</a></li>
+
+							</ul>
+				</li>
+				<li class="content-dropdown"><a class="cool-link" href="HOMEAMTHUC.html">&#7848;M TH&#7920;C</a>
+					<i class="arrow"></i>
+   							<ul class="dropdown">
+								<li><a href="ANVATDL.html">&#272;À L&#7840;T</a></li>
+								
+								<li><a href="ANVATSG.html">SÀI GÒN</a></li>
+								
+								<li><a href="ANVATVT.html">V&#360;NG TÀU</a></li>
+
+							</ul>
+				</li>
+				<li ><a class="cool-link" href="doanthongtin.html">THÔNG TIN</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="header-img">
+		<div class="content-img">
+			<img src="img/bread.jpg" style="height: 350px; width: 300px;">
+			<div><p><i>Khám Phá V&#7873; &#7848;m Th&#7921;c &#7902; N&#417;i Mà B&#7841;n Mu&#7889;n &#272;&#7871;n.</i></p></div>
+		</div>
+		<div class="content-img">
+			<img src="img/concert.jpg"  style="height: 350px; width: 300px;">
+			<div><p><i>Tham Gia Nh&#7919;ng L&#7877; H&#7897;i Náo Nhi&#7879;t Vào Các D&#7883;p Trong N&#259;m.</i></p></div>
+		</div>
+		<div class="content-img">
+			<img src="img/anhdep.jpg" style="height: 350px; width: 300px;">
+			<div><p><i>Ch&#7885;n Cho Mình Nh&#7919;ng &#272;&#7883;a &#272;i&#7875;m &#272;u L&#7883;ch Tuy&#7879;t V&#7901;i.</i></p></div>
+		</div>
+				
+	</div>
+	<div class="main-img">
+		<img src="img/tree.jpg" style="width: 100%; height: 500px;">
+		<div class="main-img-text">
+			<div class="main-img-text-bt">
+			    <p><i>Chào M&#7915;ng &#272;&#7871;n V&#7899;i Travel & Food</i></p>
+                <p>&#7902; &#272;ÂY CÁC B&#7840;N S&#7868; TÌM TH&#7844;Y NH&#7918;NG &#272;I&#7874;M DU L&#7882;CH H&#7844;P D&#7850;N VÀ NH&#7918;NG MÓN &#258;N TUY&#7878;T V&#7900;I T&#7840;I N&#416;I &#272;Ó</p>
+            </div>
+         
+		</div>
+	</div>
+	<div class="main-content">
+		<div class="main-content-text">
+			<div class="main-content-text-1"><p>DU L&#7882;CH</p></div>
+			<div class="main-content-text-2"><a href="doan.html">T&#7845;t c&#7843; v&#7873; du l&#7883;ch</a></div>
+		</div>
+		<div class="main-content-img">
+		    <div class="main-content-img-1">
+		    	<a href="dulich_dalat.html"><img src="img/DALAT.jpg" style="height: 335px; width: 270px;"></a>
+		    	<div><p><i>&#272;À L&#7840;T</i></p></div>
+		    </div>
+		    <div class="main-content-img-1">
+		    	<a href="dulich_saigon.html"><img src="img/SAIGON.png" style="height: 335px; width: 270px;"></a>
+		    	<div><p><i>TP H&#7890; CHÍ MINH</i></p></div>
+		    </div>
+		    <div class="main-content-img-1">
+		    	<a href="dulich_vungtau.html"><img src="img/VUNGTAU.jpg" style="height: 335px; width: 270px;"></a>
+		    	<div><p><i>V&#360;NG TÀU</i></p></div>
+		    </div>	
+		</div>
+	</div>
+	<div class="main-content">
+		<div class="main-content-text">
+			<div class="main-content-text-1"><p>&#7848;M TH&#7920;C</p></div>
+			<div class="main-content-text-2"><a href="">T&#7845;t c&#7843; v&#7873; &#7849;m th&#7921;c</a></div>
+		</div>
+		<div class="main-content-img">
+		    <div class="main-content-img-1">
+		    	<a href="ANVATVT.html"><img src="img/monan.jpg" style="height: 320px; width: 270px;"></a>
+		    	<div><P><i>Nh&#7919;ng Món &#258;n H&#7845;p D&#7851;n &#7902; V&#361;ng Tàu</i></P></div>
+		    </div>
+		    <div class="main-content-img-1">
+		    	<a href="ANVATDL.html"><img src="img/monandalat.jpg" style="height: 320px; width: 270px;"></a>
+		    	<div><P><i>Nh&#7919;ng Món &#258;n H&#7845;p D&#7851;n &#7902; &#272;à L&#7841;t</i></P></div>
+		    </div>
+		    <div class="main-content-img-1">
+		    	<a href="ANVATSG.html"><img src="img/monansaigo.jpg" style="height: 320px; width: 270px;"></a>
+		    	<div><P><i>Nh&#7919;ng Món &#258;n H&#7845;p D&#7851;n &#7902; Sài Gòn</i></P></div>
+		    </div>	
+		</div>
+	</div>
+	<div class="main-img">
+		<img src="img/write.jpg" style="width: 100%; height: 500px; opacity: 0.7;">
+		<div class="main-img-text">
+			<div class="main-img-text-bt">
+			    <p>THÔNG TIN V&#7872; CHÚNG TÔI</p>
+            </div>
+            <div class="main-img-text-link">
+            <a href="doanthongtin.html">FOLLOW US</a>
+            </div>
+		</div>
+	</div>
+	<div class="footer"><p>copyright by us</p></div>
+
+</body>
+</html>
